@@ -43,64 +43,64 @@
 #print(set3)
 
 #check if an element is in a set
-#print(3 in set1)
-#print('banana' in set2)
+# #print(3 in set1)
+# #print('banana' in set2)
 
-#find the length of a set
-#print(len(set1))
-#print(len(set2))
-#print(len(set3))
-#print(len(set4))
+# find the length of a set
+# print(len(set1))
+# print(len(set2))
+# print(len(set3))
+# print(len(set4))
 
-#clear a set
-#set1.clear()
-#print(set1)
-#id_numbers={198798, 22345, 50282572, 334444, 239585}
-#remove first element from the set
-#id_numbers.pop()
-#print(id_numbers)
-#id_numbers.add(18236123)
-#print(id_numbers)
-
-
+# clear a set
+# set1.clear()
+# print(set1)
+# id_numbers={198798, 22345, 50282572, 334444, 239585}
+# remove first element from the set
+# id_numbers.pop()
+# print(id_numbers)
+# id_numbers.add(18236123)
+# print(id_numbers)
 
 
-#############tuples##################################
-# Tuples are ordered collections of elements
-# Tuples are immutable
-# Tuples are defined by parentheses ()
-#example of tuples
-tuple1 = (1, 2, 3, 4, 5)  # tuple of integers
-tuple2 = ('apple', 'banana', 'cherry')  # tuple of strings
-tuple3 = (1, 2, 3, 'apple', 'banana')  # mixed tuple
-tuple4 = (1, 2, 3, 4, 5, 1, 2, 3, 4, 5)  # duplicate elements are allowed
 
-#access elements in a tuple
-print(tuple1[0])
-print(tuple2[1])
-print(tuple3[2])
-print(tuple4)
-print(tuple4[-1])
 
-#find the length of a tuple
-print(len(tuple1))
-print(len(tuple2))
-print(len(tuple3))
-print(len(tuple4))
+# #############tuples##################################
+# # Tuples are ordered collections of elements
+# # Tuples are immutable
+# # Tuples are defined by parentheses ()
+# #example of tuples
+# tuple1 = (1, 2, 3, 4, 5)  # tuple of integers
+# tuple2 = ('apple', 'banana', 'cherry')  # tuple of strings
+# tuple3 = (1, 2, 3, 'apple', 'banana')  # mixed tuple
+# tuple4 = (1, 2, 3, 4, 5, 1, 2, 3, 4, 5)  # duplicate elements are allowed
 
-#count the number of occurrences of an element in a tuple
-print(tuple4.count(3))
-print(tuple4.count(6))# output 0 since there is no 6th count
+# #access elements in a tuple
+# print(tuple1[0])
+# print(tuple2[1])
+# print(tuple3[2])
+# print(tuple4)
+# print(tuple4[-1])
 
-#find the index of an element in a tuple
-print(tuple1.index(3))
-print(tuple2.index('banana'))
+# #find the length of a tuple
+# print(len(tuple1))
+# print(len(tuple2))
+# print(len(tuple3))
+# print(len(tuple4))
 
-#convert a tuple to a list
-print(list(tuple1))
+# #count the number of occurrences of an element in a tuple
+# print(tuple4.count(3))
+# print(tuple4.count(6))# output 0 since there is no 6th count
 
-#convert a list to a tuple
-print(tuple(list(tuple1)))
+# #find the index of an element in a tuple
+# print(tuple1.index(3))
+# print(tuple2.index('banana'))
+
+# #convert a tuple to a list
+# print(list(tuple1))
+
+# #convert a list to a tuple
+# print(tuple(list(tuple1)))
     
 
 
@@ -128,24 +128,22 @@ and you may call me V."""
 
 
 # Convert the text to a tuple of characters
+(tuple(list(text)))
 
 
-
-
-# Tuple to store the target characters
-
-
-
-
-
+# Tuple to store the target character
+v=(text.count("v"))
+cap=(text.count("V"))
 
 # Count occurrences of 'v' or 'V' by filtering the text_tuple
-
+Vtotal=(v + cap)
 
 
 
 # Output the result
-
+print(f" Amount of lowercase v's: {v}")
+print(f" Amount of Uppercase V's: {cap}")
+print(f" Total amout of V's: {Vtotal}")
 
 
 
@@ -155,28 +153,40 @@ and you may call me V."""
 
 
 sample_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
 # get length of the list
 print(len(sample_list)) # Output: 3
+#printing lists 
+print(sample_list[0])
+print(sample_list[1])
+print(sample_list[2])
+#extract the 8 out of the list
+print(sample_list[2][1])
+print(sample_list[1][2])
+print(sample_list[0][2])
+print(sample_list[2][0])
+      
 #this is called a nested list
-# Extract and print the second element from the first list
-
 
 sample_list_of_fruit = {"fruits": ["apple", "banana", "cherry"]}
 # Extract and print the second fruit from the list
 
+print(sample_list_of_fruit["fruits"][1])
+print(sample_list_of_fruit["fruits"][2])
 
 sample_list_of_lists = {"lists": [[1, 2, 3], [4, 5, 6], [7, 8, 9]]}
 # Extract and print the third element from the second list
-
+print(sample_list_of_lists['lists'][1][2])
+print(sample_list_of_lists['lists'][2][2])
+print(sample_list_of_lists['lists'][0][2])
 
 
 
 sample_list_of_dicts = {"dicts": [{"name": "Alice", "age": 25}, {"name": "Bob", "age": 30}, {"name": "Charlie", "age": 35}]}
 # Extract and print the age of the second person
-
-
-
-
+print(sample_list_of_dicts['dicts'][1]['age'])
+print(sample_list_of_dicts['dicts'][2]['name'])
+print(sample_list_of_dicts['dicts'][0]['name'])
 
 
 data = {
@@ -276,7 +286,4 @@ cities = {
 # Extract and print the population of Los Angeles
 la_population = cities["USA"]["Los Angeles"]["population"]
 print(f"Population of Los Angeles: {la_population}")  # Output: 4000000
-
-
-
 
