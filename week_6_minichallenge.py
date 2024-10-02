@@ -69,7 +69,7 @@ my_dict= {"name":"karen",
 # my_dict = {"values_1":{"v1":3,"v2":6},"points":{"points1":9,"points2":[10,300,15]}}
 # print(my_dict[]) #Use dictionary indices to extract the second item of points2
 my_dic = {"values_1":{"v1":3,"v2":6},"points":{"points1":9,"points2":[10,300,15]}}
-my_dic.pop("v2")
+my_dic.popitem()
 print(my_dic)
 
 
