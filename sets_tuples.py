@@ -269,7 +269,6 @@ print(f"Total oranges in warehouse1: {orange_quantity}")  # Output: 30
 
 
 
-
 # Define the dictionary
 cities = {
     "USA": {
